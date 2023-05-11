@@ -1,0 +1,90 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin-top: 100px;
+  background-color: #f5f5f5;
+}
+
+.clock {
+    margin: 0 auto;
+    width: 320px;
+    background: linear-gradient(45deg, #00000099, #bbbbbb99);
+    background-color: #fff;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 8px;
+}
+
+#clockTime {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.alarm-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.alarm-input {
+  border: 1px solid #ccc;
+  padding: 6px;
+  border-radius: 4px;
+  margin-right: 10px;
+  width: 120px;
+}
+#clockTime {
+    font-size: 36px;
+    margin-bottom: 20px;
+    background: linear-gradient(45deg, #708dd9, #ff1f1fc4);
+    color: #fff1f1;
+}
+.add-btn {
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+li {
+    color: white;
+    font-size: 19px;
+}
+.add-btn:hover {
+  background-color: #45a049;
+}
+
+.alarm-list {
+  list-style-type: none;
+  padding: 0;
+  text-align: left;
+}
+
+.alarm-list li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px;
+  border-bottom: 1px solid #eee;
+}
+
+.alarm-list li:last-child {
+  border-bottom: none;
+}
+
+.delete-btn {
+  background-color: #f44336;
+  color: #fff;
+  border: none;
+  padding: 4px 8px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.delete-btn:hover {
+  background-color: #e53935;
+}
