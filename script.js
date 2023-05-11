@@ -59,7 +59,6 @@ function checkAlarms() {
   var currentTime = new Date();
   var currentHour = currentTime.getHours();
   var currentMinute = currentTime.getMinutes();
-  var currentAMPM = (currentHour >= 12) ? 'PM' : 'AM';
 
   for (var i = 0; i < alarms.length; i++) {
     var alarmTime = alarms[i].time;
@@ -67,7 +66,7 @@ function checkAlarms() {
     var alarmHour = parseInt(alarmTime.split(':')[0]);
     var alarmMinute = parseInt(alarmTime.split(':')[1]);
 
-    if (currentHour === alarmHour && currentMinute === alarmMinute && currentAMPM === alarmAMPM) {
+    if (currentHour === alarmHour && currentMinute === alarmMinute) {
       alarmAudio.play();
       break;
     }
