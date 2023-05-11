@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Digital Clock</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <div class="clock">
+    <h1 id="clockTime"></h1>
+    <div class="alarm-section">
+      <input type="time" id="alarmTime" class="alarm-input">
+      <button onclick="addAlarm()" class="add-btn">Add Alarm</button>
+    </div>
+    <ul id="alarmList" class="alarm-list"></ul>
+  </div>
+
+  <audio id="alarmAudio" src="alarm.mp3"></audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
